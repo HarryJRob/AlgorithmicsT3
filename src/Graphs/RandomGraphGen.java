@@ -5,8 +5,7 @@ public class RandomGraphGen {
 	public static void main(String[] args) {
 		
 		Graph myGraph = randomGraph(20, 0.5f);
-		
-		
+
 		GraphDisplay myGraphDisplay = new GraphDisplay();
 		
 		System.out.println(myGraph.getVertexCount());

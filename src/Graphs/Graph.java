@@ -128,7 +128,8 @@ public class Graph {
 	public boolean addEdge(int vertexIndex1, int vertexIndex2, int weight) {
 		if(vertexIndex1 >= 0 && vertexIndex1 < vertices.size() 
 				&& vertexIndex2 >= 0 && vertexIndex2 < vertices.size() 
-				&& !edgeExists(vertexIndex1, vertexIndex2)) {
+				&& !edgeExists(vertexIndex1, vertexIndex2)
+				&& vertexIndex1 != vertexIndex2) {
 			edges.add(new Edge(vertices.get(vertexIndex1), vertices.get(vertexIndex2), weight));
 			return true;
 		}
